@@ -73,9 +73,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the p
 18. Newsletter
 19. Footer
 
-## Notes
-
-- Update video links and actual images
-- Add actual purchase and contact links
-- Customize colors and fonts from `tailwind.config.js` file
-

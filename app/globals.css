@@ -11,6 +11,10 @@
     @apply bg-off-white text-dark-gray;
   }
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 @layer utilities {
   .text-balance {
