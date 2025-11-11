@@ -81,14 +81,14 @@ export default function BookContent() {
                         backgroundPosition: 'center',
                       }}
                     >
-                      <div className="text-center text-blue-800 relative z-10">
+                      {/* <div className="text-center text-blue-800 relative z-10">
                         <h3 className="text-3xl md:text-4xl font-league-spartan font-bold mb-4">
                           {page.title}
                         </h3>
                         <p className="text-lg md:text-xl font-noto-sans opacity-90">
                           {page.description}
                         </p>
-                      </div>
+                      </div> */}
                     </motion.div>
                   </div>
                 ))}
