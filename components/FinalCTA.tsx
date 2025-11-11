@@ -5,7 +5,7 @@ import { FaShoppingCart, FaDownload, FaMapMarkerAlt } from 'react-icons/fa'
 
 export default function FinalCTA() {
   return (
-    <section id="purchase" className="py-20 bg-gradient-to-br from-gold via-dark-red to-gold text-white relative overflow-hidden">
+  <section id="purchase" className="py-20 text-white relative overflow-hidden" style={{ backgroundColor: '#7A1F2A' }}>
       <div className="absolute inset-0 pattern-overlay opacity-20"></div>
       
       <div className="container mx-auto px-4 relative z-10">

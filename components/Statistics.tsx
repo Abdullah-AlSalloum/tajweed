@@ -51,7 +51,7 @@ export default function Statistics() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-br from-gold to-dark-red text-white">
+    <section ref={ref} className="py-20 bg-gradient-to-br bg-[#AB8F54] text-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

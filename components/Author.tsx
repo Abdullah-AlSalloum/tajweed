@@ -18,7 +18,7 @@ export default function Author() {
               <div 
                 className="w-48 h-48 rounded-full flex items-center justify-center shrink-0"
                 style={{
-                  backgroundImage: 'url(/images/Dr_Ayman-2.png)',
+                  backgroundImage: 'url(/images/Dr_Ayman-2m.png)',
                   backgroundSize: 'contain',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat',

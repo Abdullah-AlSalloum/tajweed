@@ -46,7 +46,8 @@ export default function BookExplanations() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="bg-gradient-to-br from-bright-blue to-gold p-8 rounded-lg text-white shadow-lg hover:shadow-xl transition-shadow block"
+              className="bg-gradient-to-br p-8 rounded-lg text-white shadow-lg hover:shadow-xl transition-shadow block"
+              style={{ backgroundColor: "#AB8F54" }}
             >
               <FaYoutube className="w-12 h-12 mb-4" />
               <h3 className="text-xl font-league-spartan font-bold mb-2">{playlist.title}</h3>

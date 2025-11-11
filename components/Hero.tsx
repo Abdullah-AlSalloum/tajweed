@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-off-white via-white to-off-white islamic-pattern pt-20">
       <div className="absolute inset-0 pattern-overlay opacity-50"></div>
       
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-5 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Book Cover 3D Effect */}
           <motion.div
@@ -21,7 +21,7 @@ export default function Hero() {
               <motion.div
                 whileHover={{ rotateY: 5, rotateX: 5 }}
                 style={{ transformStyle: 'preserve-3d' }}
-                className="w-80 h-[500px]"
+                className="w-70 h-[400px] sm:w-80 sm:h-[500px]"
               >
                 {/* Book cover image */}
                 <img
@@ -48,7 +48,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center md:text-left"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-league-spartan font-bold text-dark-gray mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-league-spartan font-bold text-dark-gray mb-6 leading-tight">
               Learn Tajweed with the Most Accurate and Renowned Book in the Islamic World
             </h1>
             

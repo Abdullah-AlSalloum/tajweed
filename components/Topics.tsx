@@ -7,32 +7,32 @@ const topics = [
   {
     icon: FaBookOpen,
     title: 'Letter Articulation Points',
-    color: 'from-bright-blue to-gold',
+    color: '#0273D0',
   },
   {
     icon: FaMicrophone,
     title: 'Rules of Noon and Meem',
-    color: 'from-gold to-dark-red',
+    color: '#0273D0',
   },
   {
     icon: FaVolumeUp,
     title: 'Elongation and Nasalization',
-    color: 'from-dark-red to-bright-blue',
+    color: '#0273D0',
   },
   {
     icon: FaPause,
     title: 'Tafkheem and Tarqeeq',
-    color: 'from-gold to-bright-blue',
+    color: '#0273D0',
   },
   {
     icon: FaQuran,
     title: 'Stopping and Starting',
-    color: 'from-bright-blue to-dark-red',
+    color: '#0273D0',
   },
   {
     icon: FaPen,
     title: 'Quran Script and Diacritics',
-    color: 'from-dark-red to-gold',
+    color: '#0273D0',
   },
 ]
 
@@ -60,7 +60,8 @@ export default function Topics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-gradient-to-br ${topic.color} p-8 rounded-lg text-white text-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer hover:scale-105 transform transition-transform`}
+              className={`bg-gradient-to-br p-8 rounded-lg text-white text-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer hover:scale-105 transform transition-transform`}
+              style={{ backgroundColor: topic.color }}
             >
               <topic.icon className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-xl font-league-spartan font-bold">{topic.title}</h3>
