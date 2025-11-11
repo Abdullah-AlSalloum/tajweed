@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { FaPlay, FaShoppingCart } from 'react-icons/fa'
-
+import Image from 'next/image'
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-off-white via-white to-off-white islamic-pattern pt-20">
@@ -21,14 +21,20 @@ export default function Hero() {
               <motion.div
                 whileHover={{ rotateY: 5, rotateX: 5 }}
                 style={{ transformStyle: 'preserve-3d' }}
-                className="w-80 h-[500px] bg-gradient-to-br from-gold to-dark-red rounded-lg shadow-2xl"
+                className="w-80 h-[500px]"
               >
-                <div className="w-full h-full bg-gradient-to-br from-bright-blue via-gold to-dark-red rounded-lg p-8 flex items-center justify-center border-4 border-white">
-                  <div className="text-center text-white">
-                    <h3 className="text-2xl font-league-spartan font-bold mb-4">Illustrated Tajweed</h3>
-                    <p className="text-lg font-noto-sans">Dr. Ayman Rushdi Suwayd</p>
-                  </div>
-                </div>
+                {/* Book cover image */}
+                <img
+                  src="/images/bookcover1.png"
+                  alt="Illustrated Tajweed book cover"
+                  className="w-full h-full object-cover rounded-lg bg-transparent"
+                  onError={(e) => {
+                    // hide image if it fails to load to avoid broken icon
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    e.currentTarget.style.display = 'none'
+                  }}
+                />
               </motion.div>
               {/* Shadow */}
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-8 bg-black opacity-20 blur-xl rounded-full"></div>

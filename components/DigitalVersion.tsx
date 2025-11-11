@@ -17,11 +17,14 @@ export default function DigitalVersion() {
               className="flex justify-center"
             >
               <div className="relative">
-                <div className="w-64 h-96 bg-gradient-to-br from-bright-blue to-gold rounded-3xl shadow-2xl p-4">
-                  <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                    <FaMobile className="w-32 h-32 text-medium-gray opacity-30" />
-                  </div>
-                </div>
+                <div 
+                  className="w-80 h-[480px] rounded-3xl"
+                  style={{
+                    backgroundImage: 'url(/images/tajweedphone.png)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                />
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold rounded-full opacity-20 blur-2xl"></div>
               </div>
             </motion.div>

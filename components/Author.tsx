@@ -15,11 +15,16 @@ export default function Author() {
             className="bg-white rounded-lg shadow-xl p-8 md:p-12"
           >
             <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-gold to-dark-red flex items-center justify-center shrink-0">
-                <div className="text-white text-center p-4">
-                  <p className="text-2xl font-league-spartan font-bold">Dr. Ayman</p>
-                  <p className="text-lg font-noto-sans">Rushdi Suwayd</p>
-                </div>
+              <div 
+                className="w-48 h-48 rounded-full flex items-center justify-center shrink-0"
+                style={{
+                  backgroundImage: 'url(/images/Dr_Ayman-2.png)',
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                
               </div>
 
               <div className="text-center md:text-left flex-1">
