@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion'
 import ReactCountryFlag from 'react-country-flag'
+import { useRef } from 'react'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 const languages = [
   { name: 'Arabic', code: 'SA' },
@@ -30,32 +32,57 @@ export default function Languages() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {languages.map((language, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white border-2 border-off-white rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-shadow hover:scale-105 transform"
-            >
-              <div className="text-4xl mb-3 flex justify-center">
-                <ReactCountryFlag
-                  countryCode={language.code}
-                  svg
-                  style={{
-                    width: '2em',
-                    height: '2em',
-                    borderRadius: '4px',
-                  }}
-                />
-              </div>
-              <h3 className="text-lg font-league-spartan font-semibold text-dark-gray">
-                {language.name}
-              </h3>
-            </motion.div>
-          ))}
+        <div className="max-w-6xl mx-auto relative">
+          <button
+            aria-label="Previous"
+            onClick={() => {
+              const el = document.getElementById('languages-carousel')
+              if (el) el.scrollBy({ left: -el.clientWidth * 0.8, behavior: 'smooth' })
+            }}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white p-2 rounded-full  hover:bg-gray-100"
+          >
+            <FaChevronLeft className="w-5 h-5 text-dark-gray" />
+          </button>
+
+          <div
+            id="languages-carousel"
+            className="flex gap-6 overflow-x-auto scroll-smooth py-2 px-2"
+            style={{ scrollSnapType: 'x mandatory' }}
+          >
+            {languages.map((language, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: index * 0.07 }}
+                className="bg-transparent border-0 rounded-none p-2 text-center transition transform flex-shrink-0 flex flex-col items-center justify-center"
+                style={{ minWidth: 140, height: 'auto', scrollSnapAlign: 'start' }}
+              >
+                <div className="mb-2 flex items-center justify-center">
+                  <ReactCountryFlag
+                    countryCode={language.code}
+                    svg
+                    style={{ width: '2.5em', height: '2.5em' }}
+                  />
+                </div>
+                <h3 className="text-base font-league-spartan font-semibold text-dark-gray mt-2">
+                  {language.name}
+                </h3>
+              </motion.div>
+            ))}
+          </div>
+
+          <button
+            aria-label="Next"
+            onClick={() => {
+              const el = document.getElementById('languages-carousel')
+              if (el) el.scrollBy({ left: el.clientWidth * 0.8, behavior: 'smooth' })
+            }}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100"
+          >
+            <FaChevronRight className="w-5 h-5 text-dark-gray" />
+          </button>
         </div>
       </div>
     </section>
