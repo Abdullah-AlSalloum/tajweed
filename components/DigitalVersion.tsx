@@ -8,7 +8,7 @@ export default function DigitalVersion() {
     <section className="py-10 bg-gradient-to-br from-off-white to-white relative">
       <div className="container relative mx-auto px-4 -mt-40">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 items-center">
 
             <div className='relative -top-20 sm:pt-20 flex justify-center'>
               <div
@@ -25,9 +25,9 @@ export default function DigitalVersion() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-center md:text-left mt-10"
+              className="text-center md:text-left lg:mt-10"
             >
-              <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-6 -mt20">
+              <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-6">
                 Digital Version
               </h2>
               <p className="text-lg text-medium-gray mb-8 font-noto-sans leading-relaxed">
