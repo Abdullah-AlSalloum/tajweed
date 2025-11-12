@@ -1,12 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaEye, FaPalette, FaQrcode, FaGraduationCap, FaBook, FaPrint, FaMobile, FaGlobe } from 'react-icons/fa'
+import { FaEye, FaPalette, FaQrcode, FaGraduationCap, FaBook, FaPrint, FaMobile, FaGlobe, FaVideo } from 'react-icons/fa'
 import { FaStar, FaShoppingCart } from 'react-icons/fa'
 
 const scientificFeatures = [
   {
-    icon: FaEye,
+    icon: FaVideo,
     title: 'Comprehensive Visual Explanation',
     description: 'All Tajweed rules presented through images and illustrations',
   },

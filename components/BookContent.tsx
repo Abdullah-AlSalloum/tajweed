@@ -3,34 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
-import Image from 'next/image'
-
-const bookPages = [
-  {
-    id: 1,
-    title: 'Letter Articulation Points',
-    description: 'Precise illustrations of letter articulation points and their characteristics',
-    image: '/images/tajweedopenbook.png',
-  },
-  {
-    id: 2,
-    title: 'Rules of Noon and Meem',
-    description: 'Comprehensive explanation of assimilation, conversion, and concealment rules',
-    image: '/images/tajweedopenbook.png',
-  },
-  {
-    id: 3,
-    title: 'Elongation and Nasalization',
-    description: 'Details of elongation types with audio examples',
-    image: '/images/tajweedopenbook.png',
-  },
-  {
-    id: 4,
-    title: 'Tafkheem and Tarqeeq',
-    description: 'Explanation of phonetic differences through colors and illustrations',
-    image: '/images/tajweedopenbook.png',
-  },
-]
+import { bookPages } from '@/data/bookPages'
 
 export default function BookContent() {
   const [currentIndex, setCurrentIndex] = useState(0)
