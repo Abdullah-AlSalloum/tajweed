@@ -5,8 +5,8 @@ import { FaDownload, FaMobile } from 'react-icons/fa'
 
 export default function DigitalVersion() {
   return (
-    <section className=" bg-gradient-to-br ">
-      <div className="container relative mx-auto px-4 -mt-40 sm:top-20">
+    <section className="py-10 bg-gradient-to-br from-off-white to-white relative">
+      <div className="container relative mx-auto px-4 -mt-40">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
 
@@ -27,7 +27,7 @@ export default function DigitalVersion() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-center md:text-left mt-10"
             >
-              <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-6 -mt-20">
+              <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-6 -mt20">
                 Digital Version
               </h2>
               <p className="text-lg text-medium-gray mb-8 font-noto-sans leading-relaxed">
