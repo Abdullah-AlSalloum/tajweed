@@ -16,7 +16,7 @@ export default function Author() {
           >
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div 
-                className="w-48 h-48 rounded-full flex items-center justify-center shrink-0"
+                className=" w-60 h-60 rounded-full flex items-center justify-center"
                 style={{
                   backgroundImage: 'url(/images/Dr_Ayman-2m.png)',
                   backgroundSize: 'contain',

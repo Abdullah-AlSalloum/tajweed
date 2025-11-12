@@ -5,39 +5,29 @@ import { FaDownload, FaMobile } from 'react-icons/fa'
 
 export default function DigitalVersion() {
   return (
-    <section className="pt-0 pb-8 -mt-20 bg-gradient-to-br from-white to-off-white">
-      <div className="container mx-auto px-4 pt-0">
+    <section className=" bg-gradient-to-br ">
+      <div className="container relative mx-auto px-4 -mt-40 sm:top-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="flex justify-center"
-            >
-              <div className="relative">
-                <div 
-  className="w-[320px] h-[550px] sm:w-[400px] sm:h-[650px] lg:w-[480px] lg:h-[750px] rounded-2xl"
-  style={{
-    backgroundImage: 'url(/images/tajweedtablet.png)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
-/>
 
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold rounded-full opacity-20 blur-2xl"></div>
-              </div>
-            </motion.div>
-
+            <div className='relative -top-20 sm:pt-20 flex justify-center'>
+              <div
+                className=" w-[320px] h-[550px] sm:w-[400px] sm:h-[650px] lg:w-[480px] lg:h-[750px] rounded-2xl"
+                style={{
+                  backgroundImage: 'url(/images/tajweedtablet.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              />
+            </div>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-center md:text-left"
+              className="text-center md:text-left mt-10"
             >
-              <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-6">
+              <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-6 -mt-20">
                 Digital Version
               </h2>
               <p className="text-lg text-medium-gray mb-8 font-noto-sans leading-relaxed">

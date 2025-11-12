@@ -5,7 +5,7 @@ import { FaPlay, FaShoppingCart } from 'react-icons/fa'
 import Image from 'next/image'
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-off-white via-white to-off-white islamic-pattern pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-off-white via-white to-off-white islamic-pattern pt-10">
       <div className="absolute inset-0 pattern-overlay opacity-50"></div>
       
       <div className="container mx-auto px-4 py-5 relative z-10">

@@ -44,14 +44,14 @@ export default function BookContent() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-0"
         >
           <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-4">
             Book Content
@@ -74,7 +74,7 @@ export default function BookContent() {
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      className="relative p-12 md:p-20 aspect-video flex items-center justify-center rounded-lg overflow-hidden"
+                      className="relative p-0 md:p-0 aspect-video flex items-center justify-center rounded-lg overflow-hidden"
                       style={{
                         backgroundImage: `url(${page.image})`,
                         backgroundSize: 'cover',

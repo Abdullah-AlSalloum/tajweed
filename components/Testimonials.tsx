@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaStar } from 'react-icons/fa'
+import { FaStar, FaShoppingCart } from 'react-icons/fa'
 
 const testimonials = [
   {
@@ -35,11 +35,24 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
+           <div className="flex justify-center mb-6">
+            <motion.a
+              href="#purchase"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gold text-white px-6 py-3 rounded-lg font-league-spartan font-semibold text-base flex items-center gap-2 shadow-lg hover:shadow-xl transition"
+            >
+              <FaShoppingCart />
+              Buy the Book Now
+            </motion.a>
+          </div>
           <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-4">
             User Reviews
           </h2>
+
+         
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { FaShoppingCart } from 'react-icons/fa'
 
 export default function BookIntroduction() {
   return (
@@ -24,6 +25,18 @@ export default function BookIntroduction() {
           <p className="text-base md:text-lg text-medium-gray leading-relaxed font-noto-sans">
             The most comprehensive visual reference in Tajweed science, helping readers understand Quranic pronunciation through precise images, simplified scientific explanations, and audio guidance from the author.
           </p>
+
+          <div className="mt-8 flex justify-center">
+            <motion.a
+              href="#purchase"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gold text-white px-8 py-4 rounded-lg font-league-spartan font-semibold text-lg flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <FaShoppingCart />
+              Buy the Book Now
+            </motion.a>
+          </div>
         </motion.div>
       </div>
     </section>

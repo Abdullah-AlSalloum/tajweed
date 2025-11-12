@@ -27,7 +27,7 @@ export default function BookExplanations() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-4">
             Book Explanations

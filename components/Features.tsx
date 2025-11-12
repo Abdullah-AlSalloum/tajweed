@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { FaEye, FaPalette, FaQrcode, FaGraduationCap, FaBook, FaPrint, FaMobile, FaGlobe } from 'react-icons/fa'
+import { FaStar, FaShoppingCart } from 'react-icons/fa'
 
 const scientificFeatures = [
   {
@@ -51,7 +52,7 @@ const technicalFeatures = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 bg-gradient-to-br from-white to-off-white">
+    <section id="features" className="py-10 bg-gradient-to-br from-white to-off-white">
       <div className="container mx-auto px-4">
         {/* Scientific Features */}
         <motion.div
@@ -113,6 +114,17 @@ export default function Features() {
             ))}
           </div>
         </motion.div>
+        <div className="flex justify-center mt-10">
+          <motion.a
+            href="#purchase"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-gold text-white px-6 py-3 rounded-lg font-league-spartan font-semibold text-base flex items-center gap-2 shadow-lg hover:shadow-xl transition"
+          >
+            <FaShoppingCart />
+            Buy the Book Now
+          </motion.a>
+        </div>
       </div>
     </section>
   )
