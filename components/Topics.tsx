@@ -1,40 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaBookOpen, FaMicrophone, FaVolumeUp, FaPause, FaQuran, FaPen } from 'react-icons/fa'
-
-const topics = [
-  {
-    icon: FaBookOpen,
-    title: 'Letter Articulation Points',
-    color: '#0273D0',
-  },
-  {
-    icon: FaMicrophone,
-    title: 'Rules of Noon and Meem',
-    color: '#0273D0',
-  },
-  {
-    icon: FaVolumeUp,
-    title: 'Elongation and Nasalization',
-    color: '#0273D0',
-  },
-  {
-    icon: FaPause,
-    title: 'Tafkheem and Tarqeeq',
-    color: '#0273D0',
-  },
-  {
-    icon: FaQuran,
-    title: 'Stopping and Starting',
-    color: '#0273D0',
-  },
-  {
-    icon: FaPen,
-    title: 'Quran Script and Diacritics',
-    color: '#0273D0',
-  },
-]
+import Image from 'next/image'
+import { topics } from '@/data/topics'
 
 export default function Topics() {
   return (
@@ -60,10 +28,12 @@ export default function Topics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-gradient-to-br p-8 rounded-lg text-white text-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer hover:scale-105 transform transition-transform`}
+              className="bg-gradient-to-br p-8 rounded-lg text-white text-center shadow-lg hover:shadow-xl transition cursor-pointer hover:scale-105 transform"
               style={{ backgroundColor: topic.color }}
             >
-              <topic.icon className="w-16 h-16 mx-auto mb-4" />
+              <div className="w-16 h-16 mx-auto mb-4 relative" style={{ filter: 'brightness(0) saturate(100%) invert(88%) sepia(71%) saturate(1130%) hue-rotate(5deg) brightness(100%) contrast(102%)' }}>
+                <Image src={topic.icon} alt={topic.title} width={64} height={64} className="w-full h-full object-contain" />
+              </div>
               <h3 className="text-xl font-league-spartan font-bold">{topic.title}</h3>
             </motion.div>
           ))}
