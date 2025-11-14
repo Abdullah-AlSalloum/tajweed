@@ -5,23 +5,27 @@ import { FaStar, FaShoppingCart } from 'react-icons/fa'
 
 const testimonials = [
   {
-    text: 'This book changed how our students learn Tajweed',
-    author: 'Tajweed Teacher',
+    text: 'The book is a comprehensive reference that fully covers all aspects of the correct recitation of the Noble Qur\'an.',
+    author: 'Amsha Hussein',
+    role: 'Tajweed Student',
     rating: 5,
   },
   {
-    text: 'The visual explanations made understanding easier and deeper',
-    author: 'University Student',
+    text: 'It is accurate and contains illustrations that help me explain Tajweed to my students, especially the articulation points and characteristics of the letters. It is smooth, simple, and beautifully presented.',
+    author: 'Ayat Salah al-Din',
+    role: 'Tajweed Teacher',
     rating: 5,
   },
   {
-    text: 'The best way to understand Tajweed visually and audibly',
-    author: 'Quranic Center Director',
+    text: 'It is simple, yet contains all the information a reader needs, and the illustrations greatly help in understanding.',
+    author: 'Nadia Fahmy',
+    role: 'Quran Teacher',
     rating: 5,
   },
   {
-    text: 'Our students read correctly from the first weeks',
-    author: 'Tajweed Professor',
+    text: 'It is clear and easy to comprehend; I consider it a reference for the science of Tajweed.',
+    author: 'Iman Soubra',
+    role: 'Tajweed Teacher',
     rating: 5,
   },
 ]
@@ -75,6 +79,9 @@ export default function Testimonials() {
               </p>
               <p className="text-dark-gray font-league-spartan font-semibold">
                 — {testimonial.author}
+              </p>
+              <p className="text-sm text-medium-gray font-noto-sans">
+                {testimonial.role}
               </p>
             </motion.div>
           ))}

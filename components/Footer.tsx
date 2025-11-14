@@ -1,6 +1,7 @@
 'use client'
 
 import { FaYoutube, FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -9,11 +10,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-league-spartan font-bold mb-4">About the Author</h3>
-            <p className="text-sm text-gray-400 font-noto-sans">
-              About Dr. Ayman Rushdi Suwayd and his knowledge in Tajweed
+            <p className="text-sm text-gray-400 font-noto-sans mb-4">
+              Contains the complete rules of tajweed in the form of illustrative
+              panels and pictures, along with the QR Code
             </p>
+            <div className="rounded-lg overflow-hidden">
+              <Image src="/images/aboutfooter.png" alt="About the Author" width={300} height={200} className="w-full h-auto" style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)' }} />
+            </div>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-league-spartan font-bold mb-4">Useful Links</h3>
             <ul className="space-y-2 text-sm font-noto-sans text-gray-400">
@@ -23,7 +28,7 @@ export default function Footer() {
               <li><a href="#newsletter" className="hover:text-gold transition-colors">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-league-spartan font-bold mb-4">Content</h3>
             <ul className="space-y-2 text-sm font-noto-sans text-gray-400">
@@ -32,7 +37,7 @@ export default function Footer() {
               <li><a href="#topics" className="hover:text-gold transition-colors">Book Topics</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-league-spartan font-bold mb-4">Contact Us</h3>
             <div className="flex gap-4">
@@ -51,7 +56,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400 font-noto-sans">
           <p>© {new Date().getFullYear()} Illustrated Tajweed - All rights reserved</p>
           {/* <p className="mt-2">Design and Development: Professional Landing Page</p> */}
