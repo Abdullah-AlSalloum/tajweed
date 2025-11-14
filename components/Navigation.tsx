@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,9 +24,19 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="text-2xl font-league-spartan font-bold text-dark-gray">
-            Illustrated Tajweed
-          </div>
+          <div className="flex items-center">
+  <Image
+    src="/images/aboutFooter.png"
+    alt="Illustrated Tajweed Logo"
+    width={120}
+    height={60}
+    className="object-contain"
+    style={{
+      filter:
+        'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)'
+    }}
+  />
+</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
