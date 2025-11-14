@@ -15,7 +15,7 @@ export default function Footer() {
               panels and pictures, along with the QR Code
             </p>
             <div className="rounded-lg overflow-hidden">
-              <Image src="/images/aboutfooter.png" alt="About the Author" width={300} height={200} className="w-full h-auto" style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)' }} />
+              <Image src="/images/aboutFooter.png" alt="About the Author" width={300} height={200} className="w-full h-auto" style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)' }} />
             </div>
           </div>
 
