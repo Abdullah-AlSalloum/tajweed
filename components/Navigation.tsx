@@ -26,16 +26,17 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
   <Image
-    src="/images/aboutFooter.png"
-    alt="Illustrated Tajweed Logo"
-    width={120}
-    height={60}
-    className="object-contain"
-    style={{
-      filter:
-        'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)'
-    }}
-  />
+  src="/images/aboutFooter.png"
+  alt="Illustrated Tajweed Logo"
+  width={120}
+  height={60}
+  className="object-contain"
+  style={{
+    filter:
+      'brightness(0) saturate(100%) invert(32%) sepia(36%) saturate(898%) hue-rotate(191deg) brightness(86%) contrast(96%)'
+  }}
+/>
+
 </div>
 
           {/* Desktop Menu */}
