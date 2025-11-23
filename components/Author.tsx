@@ -15,7 +15,7 @@ export default function Author() {
             className="bg-white rounded-lg shadow-xl p-8 md:p-12"
           >
             <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div 
+              <div
                 className=" w-60 h-60 rounded-full flex items-center justify-center"
                 style={{
                   backgroundImage: 'url(/images/Dr_Ayman-2m.png)',
@@ -24,15 +24,15 @@ export default function Author() {
                   backgroundRepeat: 'no-repeat',
                 }}
               >
-                
+
               </div>
 
               <div className="text-center md:text-left flex-1">
                 <h2 className="text-3xl md:text-4xl font-league-spartan font-bold text-dark-gray mb-4">
-                  The Author
+                  Author: Dr. Ayman Suwaid
                 </h2>
                 <p className="text-lg text-medium-gray font-noto-sans leading-relaxed">
-                  A contemporary Quranic recitation scholar, member of the Quran review committee, and professor of Tajweed science for over 40 years, who has presented dozens of television lessons and educational programs.
+                  A member of the International Council of Quran Recitation Masters (Shuyukh al-Iqra), Professor of the Holy Quran and Quranic Recitations, and a dedicated teacher of Tajweed science for over 40 years. He has presented dozens of television lessons and educational programs and authored extremely important books in the sciences of the Quran.
                 </p>
               </div>
             </div>

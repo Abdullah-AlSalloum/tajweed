@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaEnvelope } from 'react-icons/fa'
+import { FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 
 const distributors = [
   { country: 'United States', flag: '🇺🇸', code: 'US' },
@@ -44,11 +44,13 @@ export default function Distributors() {
                 href={`mailto:distributor@${distributor.code.toLowerCase()}.com`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 bg-gold text-white px-6 py-3 rounded-lg font-league-spartan font-semibold hover:bg-dark-red transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-league-spartan font-semibold transition-colors"
+                style={{ backgroundColor: "#25D366", color: "white" }}
               >
-                <FaEnvelope />
+                <FaWhatsapp size={24} />
                 Contact Distributor
               </motion.a>
+
             </motion.div>
           ))}
         </div>

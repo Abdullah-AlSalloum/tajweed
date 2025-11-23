@@ -9,14 +9,14 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            {/* <h3 className="text-xl font-league-spartan font-bold mb-4">About the Author</h3> */}
+             <div className="relative rounded-lg overflow-hidden -top-3">
+              <Image src="/images/aboutFooter.png" alt="About the Author" width={300} height={200} className="w-full h-auto" style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)' }} />
+            </div>
             <p className="text-sm text-gray-400 font-noto-sans mb-4">
               Contains the complete rules of tajweed in the form of illustrative
               panels and pictures, along with the QR Code
             </p>
-            <div className="rounded-lg overflow-hidden">
-              <Image src="/images/aboutFooter.png" alt="About the Author" width={300} height={200} className="w-full h-auto" style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(25%) saturate(625%) hue-rotate(4deg) brightness(100%) contrast(92%)' }} />
-            </div>
+           
           </div>
 
           <div>
